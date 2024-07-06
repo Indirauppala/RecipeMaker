@@ -1,0 +1,56 @@
+body{
+    background-image: url(images/bg.webp);
+    background-position: center center;
+    object-fit: cover;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+
+}
+.header{
+    display: flex;
+    margin-left: 10px;
+}
+.header h1{
+    padding-left: 17%;
+    font-size:5rem;
+    font-weight: 100;
+}
+.header img{
+    margin: 0;
+    height: 200px;
+    width: 300px;
+}
+input{
+    margin-left: 17%;
+    margin-top: 2%;
+    height: 30px;
+    width:500px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    color: black;
+    font-weight: 300;
+    font-size: large;
+    font-style: italic;
+}
+button{
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.title{
+    margin-top: 50px;
+    padding-left: 5%;
+}
+.items{
+    padding-left: 18%;
+    font-size: 150%;
+ font-family: 'Times New Roman', Times, serif;
+}
+.bottom{
+    height: 100px;
+}

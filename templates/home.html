@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="{% static "style.css" %}"
+</head>
+<body>
+    <div class="header">
+        <h1>Recipe App</h1>
+        <img src="static/images/cute-chef.png">
+    </div> 
+    <form method="post" action="">
+        {% csrf_token %}
+        <input type="text" placeholder="Enter Recipe name" name="query">
+        <button type="submit">Generate</button>
+    </form>
+    {% if api %}
+    <div class="title">
+    <h1>Recipe Name: {{api.0.title}} </h1>
+    <h1>Ingredients:</h1>
+</div>
+ <div class="items">
+        {% if api.0.ingredients %}
+            {% for ing in api.0.ingredients %}
+                <p>{{ing}}</p>
+            {% endfor %}
+        {% else %}
+        <p>Recipe not Found.Try out other recipes</p>
+    </div>
+    {% endif %}
+    {% endif %}
+    <div class="bottom">
+        
+    </div>
+</body>
+</html>
